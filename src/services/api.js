@@ -5,12 +5,12 @@ const api = axios.create({
 }); 
 
 api.interceptors.request.use( async (config) => {
-    const bearerToken = import.meta.env.TOKEN
+    const bearerToken = import.meta.env.VITE_TOKEN
     config.headers.Authorization = `Bearer ${bearerToken}`;
     config.headers.Accept = 'application/json;version=v1_web';
     config.headers["Content-Type"] = 'application/json';
 
-    const dataLocalStorage = config.data
+    const dataLocalStorage = await config.data
 
     if (dataLocalStorage) {
         localStorage.setItem("email", dataLocalStorage.email);
@@ -20,10 +20,10 @@ api.interceptors.request.use( async (config) => {
         return {...config, data: dataLocalStorage};
     }
   
- 
     return config;
 }, (error) => {
     return console.log(error);
 });
 
 export default api;
+
