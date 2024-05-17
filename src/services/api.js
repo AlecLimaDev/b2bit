@@ -16,7 +16,6 @@ api.interceptors.request.use( async (config) => {
         localStorage.setItem("email", dataLocalStorage.email);
         localStorage.setItem("password", dataLocalStorage.password);
         localStorage.getItem("token") !== undefined ? localStorage.setItem("token", bearerToken) : false 
-       
         return {...config, data: dataLocalStorage};
     }
   

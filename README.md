@@ -1,8 +1,38 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# b2bit - Desenvolvedor Frontend React JS
 
-Currently, two official plugins are available:
+## ``Como rodar o projeto``
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1 - Copie e cole no terminal ``git clone https://github.com/AlecLimaDev/b2bit.git``
+
+2 - Instale as dependências ``npm install``
+
+3 - Rode o projeto ``npm run dev``
+
+
+## Variáveis de Ambiente
+
+Para rodar esse projeto localmente, você vai precisar adicionar as seguintes variáveis de ambiente no seu .env
+
+`VITE_TOKEN`
+
+
+
+
+## Rodando os testes
+
+Para rodar os testes, rode o seguinte comando
+
+```bash
+  npm test
+```
+
+```bash
+  npm test:ui
+```
+
+
+## Autor
+
+- [@AlecLimaDev](https://www.github.com/AlecLimaDev)
+
