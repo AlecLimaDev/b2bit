@@ -16,7 +16,7 @@ export function HomeView() {
           <div className="flex justify-center flex-col items-center">
             <p>Profile picture</p>
             <img
-              src={data.avatar === null ? "src/assets/man-see-window.jpg" : data.avatar}
+              src={data.avatar && data.avatar.medium}
               alt="Foto de perfil"
               className="w-20 rounded-md h-20 bg-slate-500 object-cover"
             />
